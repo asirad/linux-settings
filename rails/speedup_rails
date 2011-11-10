@@ -1,0 +1,7 @@
+tar zxvf ruby-1.9.2-p180.tar.gz
+cd ruby-1.9.2-p180
+wget https://gist.github.com/raw/999435/fc2718ac3f488ab2341b65dc2ae5c123f8859bff/fast-require-ruby-19.2-p180 --no-check-certificate
+patch -p1 < fast-require-ruby-19.2-p180
+./configure
+make
+make install

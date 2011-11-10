@@ -1,0 +1,12 @@
+Problem description:
+I had a sound problems with VMWare Workstation on Windows 7 and Ubuntu 10.04 as Quest.
+Problem appears on linux booting. VMWare reports problem that used device is not reachable.
+Manual connection from botton bar doesn't not help me.
+
+Solution:
+Go to System->Preference->Sound
+Open Hardware tab
+Change "Analog Stereo Duplex" to "Analog Stereo Output"
+
+Addition steps:
+Press Connect sound from VMWare botton bar and go listen something :)

@@ -1,0 +1,37 @@
+###deb http://ftp.pl.debian.org/debian/ squeeze main
+###deb-src http://ftp.pl.debian.org/debian/ squeeze main
+
+###deb http://security.debian.org/ squeeze/updates main
+###deb-src http://security.debian.org/ squeeze/updates main
+
+# squeeze-updates, previously known as 'volatile'
+###deb http://ftp.pl.debian.org/debian/ squeeze-updates main
+###deb-src http://ftp.pl.debian.org/debian/ squeeze-updates main
+
+## uaktualnienia bezpieczeństwa
+deb http://security.debian.org/ stable/updates main contrib non-free
+
+## podstawowe repozytorium
+deb http://ftp.pl.debian.org/debian/ stable main contrib non-free
+
+## często uaktualniane pakiety, np. dotyczące
+## filtrowania spamu czy skanowania antywirusowego
+deb http://ftp.pl.debian.org/debian squeeze-updates main contrib non-free
+
+## backporty - programy przepakietowane dla stable z testinga
+deb http://backports.debian.org/debian-backports squeeze-backports main contrib non-free
+
+## debian-multimedia - kodeki, odtwarzacze, etc.
+deb http://www.debian-multimedia.org/ stable main non-free
+
+## przeglądarka Opera
+###deb http://deb.opera.com/opera/ stable non-free
+
+## virtualbox, oprogramowanie do wirtualizacji
+###deb http://download.virtualbox.org/virtualbox/debian/ squeeze contrib non-free
+
+## przeglądarka Google Chrome
+deb http://dl.google.com/linux/chrome/deb/ stable main
+
+## komunikator Skype (tylko dla i386)
+deb http://download.skype.com/linux/repos/debian/ stable non-free

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<snippets>
+  <snippet>
+    <text><![CDATA[#--------------------------]]></text>
+    <tag>ll</tag>
+    <description>Hash with line</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[2+2
+debugger
+2+2]]></text>
+    <tag>dd</tag>
+    <description>Debugger</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[pending "${1:message}"]]></text>
+    <tag>pem</tag>
+    <description>Pending message</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[it '${1:message}']]></text>
+    <tag>itp</tag>
+    <description>IT pending</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[-------------------------------------------]]></text>
+    <tag>bl</tag>
+    <description>Break text line</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[################################################################]]></text>
+    <tag>hl</tag>
+    <description>Hash line</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[----------------------------------------------------
+${1:file}
+----------------------------------------------------
+
+:CODE:
+------
+
+
+:ERROR DESCRIPTION:
+--------------------
+
+
+:SOLUTION:
+----------
+]]></text>
+    <tag>errd</tag>
+    <description>Error Description</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[pending 'ERROR IN APPLICATION - SKIPPED']]></text>
+    <tag>pee</tag>
+    <description>Pending Error</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[pending "DONE"]]></text>
+    <tag>ped</tag>
+    <description>Pending done</description>
+  </snippet>
+  <snippet>
+    <text><![CDATA[<% ${1:content} %>]]></text>
+    <tag>rr</tag>
+    <description>New snippet</description>
+  </snippet>
+</snippets>

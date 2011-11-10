@@ -1,0 +1,4 @@
+Backup configration
+gconftool-2 --dump '/app/path'
+Load configuration
+gconftool-2 --load file

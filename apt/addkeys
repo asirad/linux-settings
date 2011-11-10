@@ -1,0 +1,8 @@
+#!/bin/sh
+for KEY in $@; do
+    echo "Przetwarzanie klucza $KEY:"
+    echo -n " -> pobieranie klucza z serwera... " && \
+      gpg --keyserver keyserver.ubuntu.com --recv-keys "$KEY" >/dev/null 2>&1 && \
+      echo "OK" && echo -n " -> dodawanie klucza do bazy... " && \
+      gpg --armor --export "$KEY" | apt-key add -
+done

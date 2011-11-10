@@ -1,0 +1,24 @@
+Problem description:
+How to create custom task to run several others?
+
+Solution:
+namespace :spec do
+    task :first do
+        puts "Do something like first"
+    end
+
+    task :second do
+        puts "Do something like second"
+    end
+
+    task :third do
+        puts "Do something like third"
+    end
+end
+
+task :all => [
+    'spec:first',
+    'spec:second',
+    'spec:third' ]
+
+To run all three tasks one command is needed: rake all

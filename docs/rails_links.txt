@@ -1,0 +1,12 @@
+1. Coverage
+https://github.com/colszowka/simplecov.git
+
+2. Rspec
+git://github.com/rspec/rspec-rails.git
+git://github.com/rspec/rspec.git
+git://github.com/rspec/rspec-core.git
+git://github.com/rspec/rspec-expectations.git
+
+3. Factory_girl
+https://github.com/thoughtbot/factory_girl.git
+

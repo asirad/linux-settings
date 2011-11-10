@@ -1,0 +1,10 @@
+[Gedit Plugin]
+Loader=python
+Module=giterdone
+IAge=2
+Name=Giterdone VCS Integration
+Description=A Vcs overlay on the File Browser Plugin and Repository Manager. Version 1.2.3
+Icon=gnome-session-switch
+Authors=Robert Lopez Toscano
+Copyright=Copyright © 2011 Robert Lopez Toscano <robert.l.toscano@gmail.com>
+Website=http://gombi.net/giterdone

@@ -1,0 +1,32 @@
+-------------------------------------------------------
+1. Generate xorg.conf
+/etc/init.d/gdm3 stop
+Xorg -configure
+cp xorg.conf.new /etc/X11/xorg.conf
+
+-------------------------------------------------------
+2. Generate resolution modeline
+gtf 1280 800 60
+result: Modeline "1280x800_60.00"  83.46  1280 1344 1480 1680  800 801 804 828  -HSync +Vsync
+
+-------------------------------------------------------
+3. Add modeline to xorf.conf file
+
+Section "Monitor"
+    ...
+    Modeline "1280x800_60.00"  83.46  1280 1344 1480 1680  800 801 804 828  -HSync +Vsync
+EndSubSection
+
+Section "Screen"
+    ...
+    SubSection "Display"
+        Viewport  0 0
+        Depth     24
+        Modes     "1280x800_60.00"
+    EndSubSection
+EndSection
+
+-------------------------------------------------------
+4. Run gdm
+/etc/init.d/gdm3 start
+

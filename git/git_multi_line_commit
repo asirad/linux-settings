@@ -1,0 +1,13 @@
+Problem description:
+git commit -m "message" does not allow to write multiline messages
+
+Solution:
+I created additional script to have this abiliti e.g.
+touch /usr/local/bin/gitci
+gedit /usr/local/bin/gitci
+add this code:
+----- #!/bin/bash
+----- message=$1
+----- git commit -m"$(echo -e "$message")"
+save and use it like that
+----- gitci "first line \n second line \n third line"

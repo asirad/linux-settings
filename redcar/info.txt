@@ -1,0 +1,1 @@
+Themes directory should be copy to ~/.redcar directory

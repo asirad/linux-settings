@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<language id="docplan" _name="DocPlan" version="2.0" _section="Scripts">
+  <metadata>
+    <property name="mimetypes">text/plain</property>
+    <property name="globs">*.docplan</property>
+  </metadata>
+
+  <styles>
+    <style id="section"      _name="Section"           map-to="docplan:section"/>
+    <style id="testname"     _name="TestName"          map-to="docplan:testname"/>
+    <style id="passed"       _name="Passed"            map-to="docplan:passed"/>
+    <style id="failed"       _name="Failed"            map-to="docplan:failed"/>
+    <style id="important"    _name="Important"         map-to="docplan:important"/>
+    <style id="specialchars" _name="SpecialCharacters" map-to="docplan:specialchars"/>
+    <style id="inbrackets"   _name="InBrackets"        map-to="docplan:inbrackets"/>
+    <style id="numbers"      _name="Numbers"           map-to="docplan:numbers"/>
+    <style id="work"         _name="Work"              map-to="docplan:work"/>
+    <style id="new"          _name="New"               map-to="docplan:new"/>
+  </styles>
+
+  <definitions>
+
+    <context id="section" style-ref="section">
+      <match>^#.*</match>
+    </context>
+
+    <context id="testname" style-ref="testname">
+      <match>\[\d+\].*</match>
+    </context>
+
+    <context id="passed" style-ref="passed">
+      <keyword>Pass</keyword>
+      <keyword>Passed</keyword>
+    </context>
+
+    <context id="failed" style-ref="failed">
+      <keyword>Fail</keyword>
+      <keyword>Failed</keyword>
+    </context>
+    
+    <context id="work" style-ref="work">
+        <keyword>Work</keyword>
+    </context>
+    
+    <context id="new" style-ref="new">
+        <keyword>New</keyword>
+    </context>
+
+    <context id="specialchars" style-ref="specialchars">
+      <match extended="true">([$&amp;"'*+,/:;\-=@\`~])</match>
+    </context>
+    
+    <context id="important" style-ref="important">
+      <match extended="true">([!?])</match>
+    </context>
+
+    <context id="numbers" style-ref="numbers">
+      <match extended="true">([.0-9])</match>
+    </context>
+
+    <context id="inbrackets" style-ref="inbrackets">
+      <start>&lt;|\(</start>
+      <end>&gt;|\)</end>
+    </context>
+
+    <context id="docplan" class="no-spell-check">
+      <include>
+        <context ref="section"/>
+        <context ref="testname"/>
+        <context ref="work"/>
+        <context ref="new"/>
+        <context ref="passed"/>
+        <context ref="failed"/>
+        <context ref="important"/>
+        <context ref="specialchars"/>
+        <context ref="inbrackets"/>
+        <context ref="numbers"/>
+      </include>
+    </context>
+
+  </definitions>
+</language>

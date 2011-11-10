@@ -1,0 +1,15 @@
+1. Commands for external-tools and rails
+
+a) Execute single file for Test:Unit
+gnome-terminal --working-directory=$GEDIT_CURRENT_DOCUMENT_DIR/../../ -x sh -c 'bundle exec ruby -Itest $GEDIT_CURRENT_DOCUMENT_PATH; echo "Press button ..."; read nothing'
+
+b) Execute full Test:Unit
+gnome-terminal --working-directory=$GEDIT_CURRENT_DOCUMENT_DIR/../../ -x sh -c 'bundle exec rake test; echo "Press button ..."; read nothing'
+
+c) Execute single file for rspec
+gnome-terminal --working-directory=$GEDIT_CURRENT_DOCUMENT_DIR/../../ -x sh -c 'bundle exec ruby -Ispec $GEDIT_CURRENT_DOCUMENT_PATH; echo "Press button ..."; read nothing'
+
+d) Execute full RSpec
+gnome-terminal --working-directory=$GEDIT_CURRENT_DOCUMENT_DIR/../../ -x sh -c 'bundle exec rake spec; echo "Press button ..."; read nothing'
+
+

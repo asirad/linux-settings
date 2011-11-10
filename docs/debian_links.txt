@@ -1,0 +1,5 @@
+1. Dodawanie kluczy
+http://dug.net.pl/tekst/23/podpisy_cyfrowe_repozytoriow_(klucze_gpg)/
+
+2. Repozytoria
+http://dug.net.pl/tekst/136/lista_repozytoriow_(sources_list)_dla_debiana/#stable
